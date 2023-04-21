@@ -3,10 +3,13 @@
  */
 package com.usersystem.entities;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -35,5 +38,7 @@ public class User {
 	@Column(name = "mail")
 	private String email;
 	
+	@Transient
+	private List<Rating> ratings;
 	
 }
