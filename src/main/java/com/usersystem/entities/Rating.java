@@ -23,7 +23,7 @@ public class Rating {
 	
 	private String userId;
 	
-	private String hotelId;
+	private String teacherId;
 	
 	private int rating;
 	
