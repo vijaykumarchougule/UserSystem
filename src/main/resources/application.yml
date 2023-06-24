@@ -2,6 +2,8 @@ server:
   port: 8080
   
 spring:
+  application:
+    name: UserSystem
   datasource:
     url: jdbc:mysql://localhost:3306/usersystem
     username: root
@@ -16,7 +18,16 @@ spring:
 
   
 
-
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+       
+    
     
     
     
